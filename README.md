@@ -566,6 +566,5 @@ new: Create a simple multi-dimensional array
 364. new: Implement a prediction market system
 365. new: Build your own programming language
 
-
 21. Ask for 2 number inputs, output their sum (already oneday 25)
 23. for loop: count up to ten in words, using associative array or hashmap (day 23)
