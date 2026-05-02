@@ -20,9 +20,9 @@ r1.question(`Enter a number between 0 and 100: `, (answer) => {
     }
 
     console.log(`Success! You entered: ${num}`);
-  } catch (err) {
-    console.log(`Error: ${err.message}`);
-  } finally {
-    r1.close();
-  }
+    } catch (err) {
+      console.log(`Error: ${err.message}`);
+    } finally {
+      r1.close();
+    }
 });
