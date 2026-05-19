@@ -5,17 +5,13 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Enter a date (YYYY-MM-DD): ', (input) => {
-  const date = new Date(input);
-
-  // Convert to seconds
-  const unixTimestamp = Math.floor(date.getTime() / 1000);
-
-  // Validate and output the result
-  if (!isNaN(unixTimestamp)){
-    console.log(`Unix Timestamp: ${unixTimestamp}`);
+rl.question('Enter a year: ',(input) => {
+  const year = Number(input);
+  
+  if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+    console.log(`${year} is a leap year.`);
   } else {
-    console.log('Invalid date entered.');
+    console.log(`${year} is not a leap year.`)
   }
 
   rl.close();
