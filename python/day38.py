@@ -1,5 +1,15 @@
-import time 
+import calendar
 
-date_str = input("Enter date (YYYY-MM-DD): ")
-time_stamp = time.mktime(time.strptime(date_str, "%Y-%m-%d"))
-print(int(time_stamp))
+year_input = input("Enter a year: ")
+
+try:
+  year = int(year_input)
+
+
+  if calendar.isleap(year):
+    print(f"{year} is a leap year.")
+  else: 
+    print(f"{year} is not a leap year.")
+
+except ValueError:
+  print("Error: Please enter a valid number for the year")
