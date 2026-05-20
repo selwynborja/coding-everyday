@@ -5,5 +5,3 @@ const nycTime = new Intl.DateTimeFormat('en-US', {
 }).format(new Date());
 
 console.log(`New York Date and Time: ${nycTime}`);
-console.log("lala");
-console.log("aynsljkjhiuyeuis");
