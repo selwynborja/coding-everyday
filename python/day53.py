@@ -1,5 +1,5 @@
 import re
 
-regex = r"^\d{8}$"
-digit = bool(re.match(regex, "12345678"))
-print(digit)
+pattern = r"^(?=.*[a-z])"
+is_valid = bool(re.match(pattern, "UPPERcASE"))
+print(is_valid)
